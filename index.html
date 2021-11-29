@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Spotify</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="artist-profile">
+        <img src="https://i.scdn.co/image/ab67616d0000b27362f555a79c281187f3d9a747" alt="">
+      </div>
+
+      <div id="info">
+        <p id="song-name">Hard Knock Days</p>
+        <p id="artist-name">GENERATIONS from EXILE TRIBE</p>
+      </div>
+
+      <div class="close">
+        <img id="close-img" src="img/close.svg" alt="">
+      </div>
+    </header>
+
+    <div id="container-lyrics">
+      <main id="lyrics">
+      </main>
+      <div id="overlay"></div>
+    </div>
+
+
+
+    <footer>
+      <div class="progress-bar"></div>
+
+      <div class="buttons">
+        <div class="secondary-button">
+          <button id="romaji-button" class="buttons-footer" onclick="lyricsRomaji()" value="1">
+            <img id="romaji-symbol" src="img/romaji-disabled.svg" alt="">
+          </button>
+        </div>
+
+        <div>
+          <img id="play-button" src="img/play.svg" alt="">
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+  <script type="text/javascript" src="songs.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

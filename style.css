@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  --mainColor: rgb(98, 190, 22);
+  --fade: rgba(255, 255, 255, 0);
+  --timeColor: rgba(255, 255, 255, 0.6);
+}
+
+.wrapper {
+  height: 100vh;
+  background-color: var(--mainColor);
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  position: relative;
+  color: #fff;
+}
+
+#artist-profile {
+  max-width: 80px;
+}
+
+#artist-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#info {
+  width: 63%;
+  margin-left: 1rem;
+  letter-spacing: 1px;
+}
+
+#song-name {
+  font-weight: 800;
+  margin-top: 0.5rem;
+  font-size: 2vh;
+}
+
+#artist-name {
+  margin-top: 0.5rem;
+  font-size: 1.5vh;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+}
+
+#close-img {
+  height: 3vh;
+}
+
+#container-lyrics {
+  position: relative;
+  height: 80%;
+}
+
+#lyrics {
+  color: rgba(0, 0, 0, 0.692);
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+
+#lyrics::-webkit-scrollbar {
+  display: none;
+}
+
+#overlay:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  left: 0;
+  background: linear-gradient(var(--mainColor) 3%, var(--fade) 50%);
+  pointer-events: none;
+}
+
+#overlay:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  background: linear-gradient(var(--fade) 3%, var(--mainColor) 80%);
+  pointer-events: none;
+}
+
+footer {
+  height: 10%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0px auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+.progress-bar::before,
+.progress-bar::after {
+  color: var(--timeColor);
+  position: absolute;
+  top: 8px;
+}
+
+.progress-bar::before {
+  content: "0:00";
+  left: 0;
+}
+
+.progress-bar::after {
+  content: "3:45";
+  right: 0;
+}
+
+.buttons {
+  height: 96%;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#romaji-button {
+  background-color: transparent;
+  border-style: none;
+  position: absolute;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+#romaji-symbol {
+  height: 2.5rem;
+}
+
+#play-button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
