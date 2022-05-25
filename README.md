@@ -17,8 +17,6 @@ PS: O Spotify obtém as letras das músicas através do Musixmatch, então essa 
 
 ## About [ENG]
 
-1592 / 5000
-Resultados de tradução
 It is not just now that the Asian/Asian culture is very present here on the western side of the planet, right? South Korea in recent years has grown its influence here due to K-pop and more recently with their productions. But before that came Japan, with its culture conquering young people with its culture, with anime, manga and games and also with its music.
 
 And going to this musical side, both K-pop and Japanese songs, like songs from any other language, we like to learn to sing, right? But we Westerners have no idea how to read their writing systems, let alone how to pronounce it.
